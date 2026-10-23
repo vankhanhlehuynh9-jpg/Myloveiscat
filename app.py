@@ -75,6 +75,7 @@ update_cat_state()
 
 # --- GIAO DIỆN CHÍNH ---
 st.title("🐱 Game Chải Lông Mèo")
+st.audio("aaf63b4ec0940a2a6a4ad5f7b9786871.mp4", autoplay=True, loop=True)
 
 # Bảng thông số
 col1, col2, col3 = st.columns(3)
@@ -100,9 +101,11 @@ with tab1:
     # Hiển thị Mèo
     if st.session_state.cat_state == "back":
         st.markdown("### 🐱 Mèo đang quay lưng lại... (An toàn!)")
+        st.image("7c59985cb967810af105286709184ba2.jpg", use_container_width=True)
         st.write("*(Mèo đang quay lưng nghiêng ngó xung quanh, mau chải lông đi!)*")
     else:
         st.markdown("### 😾 MÈO ĐÃ QUAY MẶT LẠI!!! (DỪNG LẠI NGAY!)")
+        st.image("6b73b5cf4a17da8304ac0ac0d3e19642.jpg", use_container_width=True)
         st.write("*(Mèo đang chớp mắt nhìn bạn chằm chằm...)*")
 
     st.write("---")
